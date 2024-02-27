@@ -20,7 +20,10 @@ Keep this process in mind as we move to the coding problem. Make sure your progr
 
 ## Tips and Clues for Solving the Problem
 - **Nested Loops**: One way to approach this is by using two nested loops to check every possible pair of numbers in the array. This is straightforward but not the most efficient.
-- **Hash Table**: A more efficient method involves using a hash. As you iterate through the array, check if the complement (target sum - current number) exists in the hash. If it does, you've found a pair. If not, add the current number to the hash and move on.
+- **Hash**: A more efficient method involves using a [hash](https://ruby-doc.org/3.2.2/Hash.html). As you iterate through the array, check if the complement (target sum - current number) exists in the hash. If it does, you've found a pair. If not, add the current number to the hash and move on.
+<aside>
+  There are multiple terms used to describe this key-value data structure: Dictionary, Map, Hash Map, Hash Table, etc. For our purposes, we will simply use the term Hash.
+</aside>
 - **Edge Cases**: Don't forget to consider edge cases. What happens if the array is empty or contains only one element?
 - **Duplicates**: How will your program handle duplicate pairs or numbers? Make sure to test your solution against such cases.
 
@@ -119,7 +122,7 @@ end
 - A tool for data encryption
   - Incorrect. Hashes are used for data storage and retrieval, not encryption. Think about how data is accessed in a hash.
 - A structure for organizing hierarchical data
-  - Incorrect. Hash tables are not inherently hierarchical. They are better suited for key-value pair storage. Consider the flat nature of hash storage.
+  - Incorrect. Hashes are not inherently hierarchical. They are better suited for key-value pair storage. Consider the flat nature of hash storage.
 {: .choose_best #why_hash title="What does a hash primarily provide in algorithm problems?" points="1" answer="2" }
 
 - In Ruby, which method can be used to iterate over each element in an array?
@@ -144,9 +147,9 @@ end
 
 
 <!-- TODO: follow on short answer question -->
-<!-- Explain how a hash table can be used to find a pair of numbers in an array that sum up to a given target. Please explain the time and space complexity for this approach.
+<!-- Explain how a hash can be used to find a pair of numbers in an array that sum up to a given target. Please explain the time and space complexity for this approach.
 
-Sample Answer: A hash table can be used to track the elements we've seen as we iterate through the array. For each element, we calculate its complement by subtracting the element from the target sum. We then check if this complement is already in our hash table. If it is, we've found a pair that sums up to the target. If not, we add the current element to the hash table and continue. This allows for efficient lookups and avoids the need for nested loops, significantly reducing the time complexity from O(n^2) to O(n). -->
+Sample Answer: A hash can be used to track the elements we've seen as we iterate through the array. For each element, we calculate its complement by subtracting the element from the target sum. We then check if this complement is already in our hash. If it is, we've found a pair that sums up to the target. If not, we add the current element to the hash and continue. This allows for efficient lookups and avoids the need for nested loops, significantly reducing the time complexity from O(n^2) to O(n). -->
 
 
 This problem assignment encourages trainees to think about efficient ways to solve a common interview question that tests their understanding of arrays and the ability to implement a solution that may require considering the trade-offs between time and space complexity.
