@@ -39,7 +39,7 @@ sums = [5, -2, 3]
 array = arrays.sample
 sum = sums.sample
 # write your program using this method
-def two_sum(nums, target)
+def two_sum(array, sum)
 
 end
 
