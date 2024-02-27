@@ -134,12 +134,12 @@ end
 {: .choose_best #iterators title="Which method can be used to iterate over each element in an array?" points="1" answer="4" }
 
 - Which approach is most efficient for finding pairs in an array that sum to a specific value?
-  - Using two nested loops to check every pair
-    - Close. This could work, but is O(n^2) time complexity. Is there a more efficient approach?
-  - Sorting the array and then checking each pair for the sum
-    - Close. This could work, but is O(n log n) time complexity. Is there a more efficient approach?
-  - Using a hash to store and check for complements
-    - Correct! A hash is generally more efficient for this specific problem type, especially in cases where the array does not need to be sorted for any other purpose.
+- Using two nested loops to check every pair
+  - Close. This could work, but is O(n^2) time complexity. Is there a more efficient approach?
+- Sorting the array and then checking each pair for the sum
+  - Close. This could work, but is O(n log n) time complexity. Is there a more efficient approach?
+- Using a hash to store and check for complements
+  - Correct! A hash is generally more efficient for this specific problem type, especially in cases where the array does not need to be sorted for any other purpose.
 {: .choose_best #most_efficient_method title="Which approach is most efficient for finding pairs in an array that sum to a specific value?" points="1" answer="3" }
 
 
