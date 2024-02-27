@@ -111,7 +111,7 @@ end
 
 
 
-- What does a hash table primarily provide in algorithm problems?
+- What does a hash primarily provide in algorithm problems?
 - A way to store data for quick sorting
   - Incorrect. While a hash can improve some operations, they are not primarily used for sorting. Consider what makes a hash unique in managing data.
 - A method for rapid data retrieval based on key
@@ -120,7 +120,7 @@ end
   - Incorrect. Hashes are used for data storage and retrieval, not encryption. Think about how data is accessed in a hash.
 - A structure for organizing hierarchical data
   - Incorrect. Hash tables are not inherently hierarchical. They are better suited for key-value pair storage. Consider the flat nature of hash storage.
-{: .choose_best #iterators title="What does a hash primarily provide in algorithm problems?" points="1" answer="2" }
+{: .choose_best #why_hash title="What does a hash primarily provide in algorithm problems?" points="1" answer="2" }
 
 - In Ruby, which method can be used to iterate over each element in an array?
 - `each`
