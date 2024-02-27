@@ -113,16 +113,24 @@ end
 
 - What does a hash table primarily provide in algorithm problems?
 - A way to store data for quick sorting
+  - Incorrect. While a hash can improve some operations, they are not primarily used for sorting. Consider what makes a hash unique in managing data.
 - A method for rapid data retrieval based on key
+  - Correct! Hashes excel at fast data access using keys, making them ideal for situations where quick lookup of values is needed.
 - A tool for data encryption
+  - Incorrect. Hashes are used for data storage and retrieval, not encryption. Think about how data is accessed in a hash.
 - A structure for organizing hierarchical data
-{: .choose_best #iterators title="What does a hash table primarily provide in algorithm problems?" points="1" answer="2" }
+  - Incorrect. Hash tables are not inherently hierarchical. They are better suited for key-value pair storage. Consider the flat nature of hash storage.
+{: .choose_best #iterators title="What does a hash primarily provide in algorithm problems?" points="1" answer="2" }
 
 - In Ruby, which method can be used to iterate over each element in an array?
 - `each`
+  - Correct, but there's more. The `each` method does allow iteration over each element, but it's not the only method that can do this.
 - `map`
+  - Correct, but keep in mind there's more. `map` is used for transforming elements in an array through iteration, but it's not the only method for iteration.
 - `filter`
+  - Correct, but there's a broader perspective. While `filter` (in Ruby, often used as `select`) iterates over elements to filter them, it's not the only iterative method.
 - All of the above
+  - Correct! Each of these methods (`each`, `map`, and `filter`/`select`) can be used to iterate over elements in an array, each serving different purposes in the process.
 {: .choose_best #iterators title="Which method can be used to iterate over each element in an array?" points="1" answer="4" }
 
 - Which approach is most efficient for finding pairs in an array that sum to a specific value?
