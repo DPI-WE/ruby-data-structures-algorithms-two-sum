@@ -115,7 +115,7 @@ end
 - A way to store data for quick sorting
   - Incorrect. While a hash can improve some operations, they are not primarily used for sorting. Consider what makes a hash unique in managing data.
 - A method for rapid data retrieval based on key
-  - Correct! Hashes excel at fast data access using keys, making them ideal for situations where quick lookup of values is needed.
+  - Correct! Hashes excel at fast data access using keys (time complexity of O(1)), making them ideal for situations where quick lookup of values is needed.
 - A tool for data encryption
   - Incorrect. Hashes are used for data storage and retrieval, not encryption. Think about how data is accessed in a hash.
 - A structure for organizing hierarchical data
