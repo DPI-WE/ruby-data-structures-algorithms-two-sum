@@ -36,31 +36,21 @@ arrays = [
   [11, -4, 7, 8, -10]
 ]
 sums = [5, -2, 3]
-
 array = arrays.sample
 sum = sums.sample
-# write your program below
+# write your program using this method
+def two_sum(nums, target)
+
+end
+
+puts two_sum(array, sum)
 ```
-{: .repl #array_pair_sum title="Array Pair Sum" readonly_lines="[1,2,3,4,5,6,7,8,9,10]"}
+{: .repl #array_pair_sum title="Array Pair Sum" readonly_lines="[1,2,3,4,5,6,7,8,9,10,12]"}
 
 ```ruby
 describe "Array Pair Sum" do
   it "finds pairs that sum to 5 in the array [1, 2, 3, 4, 5]" do
-    path = "/tmp/code.rb"
-    allow_any_instance_of(Array).to receive(:sample).and_return([1, 2, 3, 4, 5])
-    allow_any_instance_of(Array).to receive(:sample).and_return(5)
-    output = capture_stdout { require_relative(path) }
-    expected_output = "(1, 4)\n(2, 3)"
-    expect(output.strip).to match(/#{expected_output}/), "Expected output to be '#{expected_output}', but was '#{output.strip}'."
-  end
-
-  def capture_stdout
-    old_stdout = $stdout
-    $stdout = StringIO.new
-    yield
-    $stdout.string
-  ensure
-    $stdout = old_stdout
+    expect(two_sum([1, 2, 3, 4, 5], 5)).to match_array([[1, 4], [2, 3]])
   end
 end
 ```
@@ -69,21 +59,7 @@ end
 ```ruby
 describe "Array Pair Sum" do
   it "finds pairs that sum to -2 in the array [0, -1, 2, -3, 1]" do
-    path = "/tmp/code.rb"
-    allow_any_instance_of(Array).to receive(:sample).and_return([0, -1, 2, -3, 1])
-    allow_any_instance_of(Array).to receive(:sample).and_return(-2)
-    output = capture_stdout { require_relative(path) }
-    expected_output = "(-1, -1)\n(-3, 1)"
-    expect(output.strip).to match(/#{expected_output}/), "Expected output to be '#{expected_output}', but was '#{output.strip}'."
-  end
-
-  def capture_stdout
-    old_stdout = $stdout
-    $stdout = StringIO.new
-    yield
-    $stdout.string
-  ensure
-    $stdout = old_stdout
+    expect(two_sum([0, -1, 2, -3, 1], -2)).to match_array([[-1, -1], [-3, 1]])
   end
 end
 ```
@@ -92,21 +68,7 @@ end
 ```ruby
 describe "Array Pair Sum" do
   it "finds pairs that sum to 3 in the array [11, -4, 7, 8, -10]" do
-    path = "/tmp/code.rb"
-    allow_any_instance_of(Array).to receive(:sample).and_return([11, -4, 7, 8, -10])
-    allow_any_instance_of(Array).to receive(:sample).and_return(3)
-    output = capture_stdout { require_relative(path) }
-    expected_output = "(-4, 7)"
-    expect(output.strip).to match(/#{expected_output}/), "Expected output to be '#{expected_output}', but was '#{output.strip}'."
-  end
-
-  def capture_stdout
-    old_stdout = $stdout
-    $stdout = StringIO.new
-    yield
-    $stdout.string
-  ensure
-    $stdout = old_stdout
+    expect(two_sum([11, -4, 7, 8, -10], 3)).to match_array([[-4, 7]])
   end
 end
 ```
