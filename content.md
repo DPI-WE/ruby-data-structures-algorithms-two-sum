@@ -14,7 +14,7 @@ Before tackling the main problem, let's warm up with a simpler task to get you c
   - Yes, the pair (1, 3) adds up to 4.
 - (4)
   - Not quite right. Re-read the previous sections and try again.
-{: .free_text #problem_example title="Consider the array [1, 2, 3] and a target sum of 4" points="1" answer="[2]" }
+{: .choose_best #problem_example title="Consider the array [1, 2, 3] and a target sum of 4" points="1" answer="[2]" }
 
 Keep this process in mind as we move to the coding problem. Make sure your program works with the randomly sampled arrays and sums below, then get the tests to pass.
 
