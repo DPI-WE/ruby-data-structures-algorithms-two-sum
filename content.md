@@ -50,7 +50,9 @@ puts two_sum(array, sum)
 ```ruby
 describe "Array Pair Sum" do
   it "finds pairs that sum to 5 in the array [1, 2, 3, 4, 5]" do
-    expect(two_sum([1, 2, 3, 4, 5], 5)).to match_array([[1, 4], [2, 3]])
+    result = two_sum([1, 2, 3, 4, 5], 5)
+    expected = [[1, 4], [2, 3]]
+    expect(result.map(&:sort)).to match_array(expected.map(&:sort))
   end
 end
 ```
@@ -59,7 +61,9 @@ end
 ```ruby
 describe "Array Pair Sum" do
   it "finds pairs that sum to -2 in the array [0, -1, 2, -3, 1]" do
-    expect(two_sum([0, -1, 2, -3, 1], -2)).to match_array([[-1, -1], [-3, 1]])
+    result = two_sum([0, -1, 2, -3, 1], -2)
+    expected = [[-3, 1]]
+    expect(result.map(&:sort)).to match_array(expected.map(&:sort))
   end
 end
 ```
@@ -68,7 +72,9 @@ end
 ```ruby
 describe "Array Pair Sum" do
   it "finds pairs that sum to 3 in the array [11, -4, 7, 8, -10]" do
-    expect(two_sum([11, -4, 7, 8, -10], 3)).to match_array([[-4, 7]])
+    result = two_sum([11, -4, 7, 8, -10], 3)
+    expected = [[-4, 7]]
+    expect(result.map(&:sort)).to match_array(expected.map(&:sort))
   end
 end
 ```
