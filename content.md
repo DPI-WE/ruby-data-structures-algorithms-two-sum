@@ -4,7 +4,7 @@
 Write a program that
 - takes an array of integers (array) and a target integer sum (sum)
 - finds all the pairs of integers in the array that when added together equals the target sum
-- print each pair of integers.
+- return array of integer pairs (eg [[2,3], [1,4]]).
 
 ## Understand the Problem
 Before tackling the main problem, let's warm up with a simpler task to get you comfortable with the concept of searching for pairs in an array.
