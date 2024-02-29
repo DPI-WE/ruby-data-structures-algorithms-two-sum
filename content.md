@@ -1,10 +1,12 @@
 # Array Pair Sum
 
+## The problem
 Write a program that
 - takes an array of integers (array) and a target integer sum (sum)
 - finds all the pairs of integers in the array that when added together equals the target sum
 - print each pair of integers.
 
+## Understand the Problem
 Before tackling the main problem, let's warm up with a simpler task to get you comfortable with the concept of searching for pairs in an array.
 
 - Consider the array [1, 2, 3] and a target sum of 4. Can you find a pair of numbers in this array that adds up to the target sum? 
@@ -16,18 +18,12 @@ Before tackling the main problem, let's warm up with a simpler task to get you c
   - Not quite right. Re-read the previous sections and try again.
 {: .choose_best #problem_example title="Consider the array [1, 2, 3] and a target sum of 4" points="1" answer="[2]" }
 
-Keep this process in mind as we move to the coding problem. Make sure your program works with the randomly sampled arrays and sums below, then get the tests to pass.
+Keep this process in mind as we move to the coding problem. Make sure your program works with the randomly sampled arrays and sums below, then get the tests to pass. Remember, the goal is not just to find the solution but to understand the process and improve your problem-solving skills. Take your time, experiment with different approaches, and see what works best for you.
 
-## Tips and Clues for Solving the Problem
-- **Nested Loops**: One way to approach this is by using two nested loops to check every possible pair of numbers in the array. This is straightforward but not the most efficient.
-- **Hash**: A more efficient method involves using a [hash](https://ruby-doc.org/3.2.2/Hash.html). As you iterate through the array, check if the complement (target sum - current number) exists in the hash. If it does, you've found a pair. If not, add the current number to the hash and move on.
-<aside>
-  There are multiple terms used to describe this key-value data structure: Dictionary, Map, Hash Map, Hash Table, etc. For our purposes, we will simply use the term Hash.
-</aside>
-- **Edge Cases**: Don't forget to consider edge cases. What happens if the array is empty or contains only one element?
-- **Duplicates**: How will your program handle duplicate pairs or numbers? Make sure to test your solution against such cases.
+## Think Aloud
+Remember, interviewers want to see how you approach problems. Verbalize your thought process and write pseudocode as you break down the problem and explore solutions. It’s okay to start with a simpler, less efficient solution. You can always refine it later.
 
-Remember, the goal is not just to find the solution but to understand the process and improve your problem-solving skills. Take your time, experiment with different approaches, and see what works best for you.
+## Test your code
 
 ```ruby
 arrays = [
@@ -80,7 +76,19 @@ end
 ```
 {: .repl-test #array_pair_sum_test_3 for="array_pair_sum" title="Array Pair Sum finds pairs that sum to 3" points="1"}
 
+## Tips and Clues for Solving the Problem
 
+- **Nested Loops**: One way to approach this is by using two nested loops to check every possible pair of numbers in the array. This is straightforward but not the most efficient.
+- **Hash**: A more efficient method involves using a [hash](https://ruby-doc.org/3.2.2/Hash.html). As you iterate through the array, check if the complement (target sum - current number) exists in the hash. If it does, you've found a pair. If not, add the current number to the hash and move on.
+
+<aside>
+  There are multiple terms used to describe this key-value data structure: Dictionary, Map, Hash Map, Hash Table, etc. For our purposes, we will simply use the term Hash.
+</aside>
+
+- **Edge Cases**: Don't forget to consider edge cases. What happens if the array is empty or contains only one element?
+- **Duplicates**: How will your program handle duplicate pairs or numbers? Make sure to test your solution against such cases.
+
+## Quiz
 
 - What does a hash primarily provide in algorithm problems?
 - A way to store data for quick sorting
@@ -119,5 +127,5 @@ end
 
 Sample Answer: A hash can be used to track the elements we've seen as we iterate through the array. For each element, we calculate its complement by subtracting the element from the target sum. We then check if this complement is already in our hash. If it is, we've found a pair that sums up to the target. If not, we add the current element to the hash and continue. This allows for efficient lookups and avoids the need for nested loops, significantly reducing the time complexity from O(n^2) to O(n). -->
 
-
-This problem assignment encourages trainees to think about efficient ways to solve a common interview question that tests their understanding of arrays and the ability to implement a solution that may require considering the trade-offs between time and space complexity.
+## Conclusion
+In this lesson, we've explored the problem of finding pairs in an array that sum to a given target. By breaking down the problem, considering various strategies for approaching it, and applying key programming concepts, we've equipped you with the tools to tackle similar challenges.
