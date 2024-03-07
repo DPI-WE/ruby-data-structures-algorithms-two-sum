@@ -76,6 +76,20 @@ end
 ```
 {: .repl-test #array_pair_sum_test_3 for="array_pair_sum" title="Array Pair Sum finds pairs that sum to 3" points="1"}
 
+```ruby
+describe "Array Pair Sum" do
+  it "efficiently handles a very large array, suggesting O(n) time complexity" do
+    large_array = Array.new(100000) { rand(-10000..10000) }
+    target_sum = rand(-20000..20000)
+    start_time = Time.now
+    result = two_sum(large_array, target_sum)
+    end_time = Time.now
+    expect(end_time - start_time).to be < 1 # Test should complete quickly for an O(n) solution
+  end
+end
+```
+{: .repl-test #array_pair_sum_test_4 for="array_pair_sum" title="Array Pair Sum efficiently handles a very large array, suggesting O(n) time complexity" points="1"}
+
 ## Tips and Clues for Solving the Problem
 
 - **Nested Loops**: One way to approach this is by using two nested loops to check every possible pair of numbers in the array. This is straightforward but not the most efficient.
