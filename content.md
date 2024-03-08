@@ -143,3 +143,6 @@ Sample Answer: A hash can be used to track the elements we've seen as we iterate
 
 ## Conclusion
 In this lesson, we've explored the problem of finding pairs in an array that sum to a given target. By breaking down the problem, considering various strategies for approaching it, and applying key programming concepts, we've equipped you with the tools to tackle similar challenges.
+
+## Resources
+- [leetcode](https://leetcode.com/problems/two-sum)
