@@ -1,5 +1,7 @@
 # Array Pair Sum ➕
 
+### [Here is a video for this lesson](https://www.youtube.com/watch?v=0tu0F9zrBtY)
+
 ## The problem
 Write a program that
 - takes an array of integers (array) and a target integer sum (sum)
